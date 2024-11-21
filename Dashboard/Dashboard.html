@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCA Dashboard</title>
+    <link rel="shortcut icon" href="/img/oo2.png" type="image/x-icon" sizes="300*300">
+    <link rel="stylesheet" href="/Dashboard/Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="/Dashboard/Dashboard.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- logo SCA -->
+        <a href="/index.html" class="logo">
+            <img class="img1" src="/img/oo2.png" alt="Logo">SCA
+        </a>
+            <!-- toggle menu -->
+        <input type="checkbox" id="toggle">
+        <label for="toggle"><i class="menulev"><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 block" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"  height="24" ><path d="M4 12h16M4 18h16M4 6h16" stroke="#D1D5DB" fill="none" stroke-width="2px"></path></svg></i></label>
+        <!-- navbar -->
+        <div class="menu">
+            <ul class="list">
+                <li class="home"><a href="/index.html">Home</a></li><!-- ลิงค์ไปหน้า Home -->
+                <li class="dash"><a href="/Dashboard/Dashboard.html">Dashboard</a></li><!-- ลิงค์ไปหน้า Dashboard -->
+                <li class="chat"><a href="/Chat/ChatAi/Chat.html">Chat</a></li><!-- ลิงค์ไปหน้า Chat -->
+                <li class="professor"><a href="/Professor/Professor.html">Professor</a></li> <!-- ลิงค์ไปหน้า Profassor -->
+                <div class="no">
+                    <li class="notice-all">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <a href="#" onclick="toggleMenu()"><!-- ลิงค์ไปหน้า Notify -->
+                                <path class="paht" d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"/>
+                            </a>
+                        </svg>
+                    </li>
+                </div>
+                    <div class="po">
+                        <a href="/Profile/Profile.html"><li class="profile-all"><svg class="profile" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
+                            </svg></li></a>
+                            <a href="/Profile/Profile.html"><li class="pro">Profile</li></a><!-- ลิงค์ไปหน้า Profile -->
+                    </div>
+            </ul>
+        </div>
+    </header>
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="/img/oo2.png" alt="">
+                <h3>Notification</h3>
+            </div>
+            <hr>
+            <a href="/Chat/ChatP1/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img class="img-for-sub" src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.ดร.ปราลี-1.jpg" alt="">
+                </div>
+                <p>ผู้ช่วยศาสตราจารย์ <br> ดร.ปราลี มณีรัตน์</p>
+                <span>+3</span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP2/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img class="img-for-sub" src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.มาสวีร์-1-667x1000.jpg" >
+                </div>
+                <p>ผู้ช่วยศาสตราจารย์ <br> มาสวีร์ มาศดิศรโชติ</p>
+                <span></span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP3/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img class="img-for-sub" src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/อ.มาลิวรรณ-1-667x1000.jpg" alt="">
+                </div>
+                <p>อาจารย์ <br> มาลิวรรณ บุญพลอย</p>
+                <span>+1</span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP4/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img class="img-for-sub" src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/09/อ.ทิพย์อรุณ-26-667x1000.jpg" alt="">
+                </div>
+                <p>อาจารย์ <br> ทิพย์อรุณ เขี้ยวแก้ว</p>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="wrapper"><!-- Class กำหนดการบีบค่า Element ให้ไม่ซ้อนทับกัน CSS-บรรทัดที่ 243-->
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel"><!-- Class กำหนด Element ต่างๆ การแสดงผลของสไลด์ CSS-บรรทัดที่ 273-->
+            <a href="https://www.spu.ac.th/contents/%e0%b8%9e%e0%b8%a5%e0%b8%b2%e0%b8%94%e0%b9%84%e0%b8%a1%e0%b9%88%e0%b9%84%e0%b8%94%e0%b9%89-%e0%b8%84%e0%b8%b3%e0%b8%a8%e0%b8%b1%e0%b8%9e%e0%b8%97%e0%b9%8c-eng-%e0%b8%aa%e0%b8%b2%e0%b8%a2%e0%b9%82%e0%b8%a5%e0%b8%88%e0%b8%b4%e0%b8%aa%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%aa%e0%b9%8c%e0%b8%af-%e0%b8%a2%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%a3%e0%b8%b9%e0%b9%89-%e0%b8%a2%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b9%80%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%94/"><!-- ลิงค์ไปหน้าเว็บข่าวมหาลัย -->
+                <li class="card" id="card1"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 322-->
+                    <div class="img">
+                        <img src="" alt="img1" draggable="false">
+                    </div>
+                </li>
+            </a>
+            <a href="https://www.spu.ac.th/contents/dek-%e0%b8%ad%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%95%e0%b8%ad%e0%b8%a3%e0%b9%8c%e0%b8%aa%e0%b8%b2%e0%b8%a2%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%ab%e0%b8%b2%e0%b8%a3-%e0%b8%95%e0%b9%89%e0%b8%ad%e0%b8%87%e0%b8%a3%e0%b8%b9%e0%b9%89-business-management-spuic-%e0%b8%94%e0%b8%b5%e0%b8%a2%e0%b8%b1%e0%b8%87%e0%b9%84%e0%b8%87/"><!-- ลิงค์ไปหน้าเว็บข่าวมหาลัย -->
+                <li class="card" id="card2"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 328-->
+                    <div class="img">
+                        <img src="" alt="img2" draggable="false">
+                    </div>
+                </li>
+            </a>
+            <a href="https://www.spu.ac.th/contents/%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%94%e0%b8%b7%e0%b8%ad%e0%b8%99-4-%e0%b8%ad%e0%b8%b2%e0%b8%8a%e0%b8%b5%e0%b8%9e%e0%b8%ae%e0%b8%b4%e0%b8%95%e0%b8%97%e0%b8%b5%e0%b9%88-dek-%e0%b8%9a%e0%b8%b1%e0%b8%8d%e0%b8%8a%e0%b8%b5%e0%b8%95%e0%b9%89%e0%b8%ad%e0%b8%87%e0%b8%a3%e0%b8%b9%e0%b9%89/"><!-- ลิงค์ไปหน้าเว็บข่าวมหาลัย -->
+                <li class="card" id="card3"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 334-->
+                    <div class="img">
+                        <img src="" alt="img3" draggable="false">
+                    </div>
+                </li>
+            </a>
+            <a href="https://www.spu.ac.th/quota68-2/">
+                <li class="card" id="card4"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 341-->
+                    <div class="img">
+                        <img src="https://www2.spu.ac.th/contents/wp-content/uploads/2020/09/7.2V2_เส้นทางผู้พิพากษา.png" alt="img4" draggable="false">
+                    </div>
+                </li>
+            </a>
+            <a href="https://www.spu.ac.th/contents/4-%e0%b8%aa%e0%b8%b2%e0%b8%82%e0%b8%b2-%e0%b8%a7-%e0%b8%97%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7-%e0%b8%9e%e0%b8%a3%e0%b9%89%e0%b8%ad%e0%b8%a1%e0%b9%80%e0%b8%95%e0%b8%b4%e0%b8%a1%e0%b8%aa%e0%b8%81%e0%b8%b4%e0%b8%a5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%a1%e0%b8%aa%e0%b8%b9%e0%b8%9a/">
+                <li class="card" id="card5"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 348-->
+                    <div class="img">
+                        <img src="https://www2.spu.ac.th/contents/wp-content/uploads/2020/09/7.4V4_เส้นทางผู้พิพากษา.png" alt="img5" draggable="false">
+                    </div>
+                </li>
+            </a>
+            <a href="https://www.spu.ac.th/contents/soa-%e0%b8%82%e0%b8%ad%e0%b8%95%e0%b8%ad%e0%b8%9a-%e0%b9%80%e0%b8%a3%e0%b8%b5%e0%b8%a2%e0%b8%99%e0%b8%aa%e0%b8%96%e0%b8%b2%e0%b8%9b%e0%b8%b1%e0%b8%95%e0%b8%a2%e0%b9%8c-%e0%b8%88%e0%b8%9a%e0%b8%a1%e0%b8%b2%e0%b8%97%e0%b8%b3%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%ad%e0%b8%b0%e0%b9%84%e0%b8%a3/"><!-- ลิงค์ไปหน้าเว็บข่าวมหาลัย -->
+                <li class="card" id="card6"><!-- Class กำหนด Element ต่างๆของ Card และ Id ของ Card1 CSS-บรรทัดที่ 354-->
+                    <div class="img">
+                        <img src="" alt="img6" draggable="false">
+                    </div>
+                </li>
+            </a>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i> 
+    </div>
+        <main class="main">
+            <div class="About">
+                <div class="head-about">
+                    <p>About us</p>
+            </div>
+            <div class="body-about">
+                <div class="aboutt">
+                    <div class="img-a-frame">
+                        <img class="imgabout" src="/img/about_us_img.png" alt="img-about">
+                    </div>
+                <div class="pr-about">
+                    <p>SCA ย่อมาจาก “Sripatum Communication Associate”<br>
+                        คือ เว็บไซต์ที่มุ่งเน้นการสื่อสารและการเชื่อมโยงใน มหาวิทยาลัยศรีปทุม <br> เพื่อเสริมสร้างประสิทธิภาพ ในการให้แก่นักศึกษาที่สามารถรับข่าวสาร <br>ติดต่ออาจารย์ และติดตามกิจกรรม
+                        ได้อย่างสะดวก รวดเร็ว <br>นอกจากนี้ SCA ยังถูกออกแบบให้มี ฟีเจอร์ที่ทันสมัย เช่น<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• หน้ากิจกรรมแบบออนไลน์ สำหรับติดตามกิจกรรมสำคัญของมหาวิทยาลัย<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• แชทบอทอัจฉริยะ ที่ช่วยตอบคำถามเกี่ยวกับการเรียนและบริการต่าง ๆ ตลอด 24 ชั่วโมง<br>
+                        <br>SCA: ทุกการสื่อสารอยู่ในมือคุณ
+                        ไม่ว่าคุณจะอยู่ที่ไหน SCA <br>จะเชื่อมโยงคุณเข้ากับมหาวิทยาลัยศรีปทุมได้ทุกเวลา!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> 
+        <div class="News">
+            <div class="Head-news">
+                <div class="head-news">
+                    <a href="/News/News.html">
+                        <p>News</p>
+                    </a>
+                    <a href="/News/News.html">
+                        <p class="View">View All</p
+                        </a>
+                    </div>
+                </div>
+                <div class="body-news">
+                    <a href="https://www.spu.ac.th/scholarship-port68/">
+                        <div class="img-news-frame1">
+                            <img class="img-news1" src="https://www.spu.ac.th/wp-content/uploads/2024/11/9SPU-Website-1140x450px1.webp" alt="news1">
+                        </div>
+                    </a>    
+                    <a href="https://www.spu.ac.th/scholarship-family/">
+                        <div class="img-news-frame2">
+                            <img  class="img-news2" src="https://www.spu.ac.th/wp-content/uploads/2024/09/MKT-2024_08_425_Banner-68_Web-ทุนการศึกษา-1140x450px-09.webp" alt="news2">
+                        </div>
+                    </a>
+                    <a href="https://www.spu.ac.th/scholarship-influencer/">
+                        <div class="img-news-frame3">
+                            <img class="img-news3" src="https://www.spu.ac.th/wp-content/uploads/2021/02/MKT-2024_09_452_Banner-Dek68_ทุน-INFLUENCER-1140x450px.webp" alt="news3">
+                        </div>
+                    </a>
+            </div>
+        </div>
+        <div class="Contact">
+            <div class="head-contact">
+                <p>Contact</p>
+            </div>
+            <div class="body-contact">
+                <div class="contact-frame1">
+                    <div class="C-contact">
+                        <div class="B-contact1">
+                            <p>มหาวิทยาลัยศรีปทุม 2410/2 ถ.พหลโยธิน เขตจตุจักร กรุงเทพฯ 10900 <br> Tel: (662) 558-6888 Fax: (662) 561 1721</p>
+                        </div>
+                        <div class="B-contact2">
+                            <div class="img1">
+                                <img class="icon1" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/line-64.png" alt="icon1">
+                            </div>
+                            <div class="T1">
+                                <p>@sripatum</p>
+                            </div>
+                        </div>
+                            <div class="B-contact3">
+                                <div class="img2">
+                                    <img class="icon2" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_local_phone_48px-64.png" alt="icon2">
+                                </div>
+                                <div class="T2">
+                                    <p>02 558 6888</p>
+                                </div>
+                            </div>
+                            <div class="B-contact4">
+                                <div class="img3">
+                                    <img class="icon3" src="https://cdn3.iconfinder.com/data/icons/essential-pack-2/48/8-Email-64.png" alt="icon3">
+                                </div>
+                                <div class="T3">
+                                    <p>admissions@spu.ac.th</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <a href="https://www.spu.ac.th/students/%E0%B8%9C%E0%B8%B1%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%93%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2/">   
+                    <div class="img-contact-frame2">
+                        <img  class="img-contact2" src="https://scmsconnect.spu.ac.th/_lineoa/_line_img/map_spu_2020.jpg" alt="contact2">
+                    </div>
+                </a>
+                <div class="contact-frame3">
+                    <div class="form-contact">
+                        <div class="B-name">
+                            <div class="bname">
+                                <label class="name">Your Name:</label>
+                                <input class="in-name" type="text" placeholder="Username">  
+                            </div>
+                        </div>
+                        <div class="B-Email">
+                            <div class="bEmail">
+                                <label class="Email">Your Email:</label>
+                                <input class="in-Email" type="email" placeholder="username@spumail.com">
+                            </div>
+                        </div>
+                        <div class="B-sub">
+                            <input class="sub" type="text" placeholder="Subject:">
+                        </div>
+                        <div class="B-mes">
+                            <input class="mes" type="text" placeholder="Messages:">
+                        </div>
+                        <div class="B-Button">
+                            <a href="">
+                                <input class="btn" type="button" value="Submit">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Faq">
+            <div class="Head-faq">
+                <div class="head-faq">
+                    <p>คำถามที่พบบ่อย</p>
+                </div>
+            </div>
+            <div class="body-faq">
+                <div class="img-faq-frame1">
+                    <div class="faq1">
+                        <p>
+                            Q: ถ้าหยุดเรียนจะสามารถขอชดเชยการเรียนได้หรือไม่?
+                        </p>
+                        <br>
+                        <p>
+                            A: สามารถติดต่ออาจารย์ผู้สอนเพื่อขอข้อมูลเพิ่มเติมเกี่ยวกับการชดเชยการเรียนหรือขอเอกสารเพิ่มเติมได้
+                        </p>
+                    </div>
+                </div>   
+                <div class="img-faq-frame2">
+                    <div class="faq2">
+                        <p>
+                            Q: ถ้าสอบไม่ผ่านจะมีโอกาสสอบแก้ตัวไหม?
+                        </p>
+                        <br>
+                        <p>
+                            A: หากเป็นการสอบกลางภาคหรือปลายภาค จะมีโอกาสขอสอบแก้ตัวในบางกรณี เช่น ป่วยหรือมีเหตุจำเป็น แต่ต้องติดต่ออาจารย์หรือสำนักงานคณะโดยตรง
+                        </p>
+                    </div>
+                </div>
+                <div class="img-faq-frame3">
+                    <div class="faq3">
+                        <p>
+                            Q: หากไม่ได้เข้าสอบต้องทำอย่างไร?
+                        </p>
+                        <br>
+                        <p>
+                            A: ต้องแจ้งเหตุผลและยื่นคำร้องต่อสำนักงานคณะเพื่อขออนุมัติสอบใหม่
+                        </p>
+                    </div>
+                </div>
+                <div class="img-faq-frame4">
+                    <div class="faq4">
+                        <p>
+                            Q: หากไม่ได้เข้าร่วมกิจกรรมกลุ่มจะมีผลต่อคะแนนไหม?
+                        </p>
+                        <br>
+                        <p>
+                            A: กิจกรรมกลุ่มส่วนใหญ่เป็นส่วนหนึ่งของคะแนนเก็บ หากไม่ได้เข้าร่วมอาจต้องหาทางชดเชยหรือแจ้งอาจารย์ล่วงหน้า
+                        </p>
+                    </div>
+                </div>
+                <div class="img-faq-frame5">
+                    <div class="faq5">
+                        <p>
+                            Q: การส่งงานมีการยืดเวลาได้ไหม?
+                        </p>
+                        <br>
+                        <p>
+                            A: ต้องแจ้งอาจารย์ล่วงหน้าพร้อมเหตุผลที่ชัดเจน โดยขึ้นอยู่กับดุลยพินิจของอาจารย์
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<button id="btnScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+</button>
+</body>
+</html>

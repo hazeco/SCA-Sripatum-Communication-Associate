@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCA Professor</title>
+    <link rel="stylesheet" href="/Professor/Professor2/Professor.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="shortcut icon" href="/img/oo2.png" type="image/x-icon">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="scroll-container">
+        <header class="header">
+            <!-- logo SCA -->
+            <a href="/index.html" class="logo">
+                <img class="img1" src="/img/oo2.png" alt="Logo">SCA
+            </a>
+                <!-- toggle menu -->
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><i class="menulev"><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 block" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24"  height="24" ><path d="M4 12h16M4 18h16M4 6h16" stroke="#D1D5DB" fill="none" stroke-width="2px"></path></svg></i></label>
+            <!-- navbar -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="home"><a href="/index.html">Home</a></li><!-- ลิงค์ไปหน้า Home -->
+                    <li class="dash"><a href="/Dashboard/Dashboard.html">Dashboard</a></li><!-- ลิงค์ไปหน้า Dashboard -->
+                    <li class="chat"><a href="/Chat/ChatAi/Chat.html">Chat</a></li><!-- ลิงค์ไปหน้า Chat -->
+                    <li class="professor"><a href="/Professor/Professor.html">Professor</a></li> <!-- ลิงค์ไปหน้า Profassor -->
+                    <div class="no">
+                        <li class="notice-all">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <a href="#" onclick="toggleMenu()"><!-- ลิงค์ไปหน้า Notify -->
+                                    <path class="paht" d="M17.133 12.632v-1.8a5.406 5.406 0 0 0-4.154-5.262.955.955 0 0 0 .021-.106V3.1a1 1 0 0 0-2 0v2.364a.955.955 0 0 0 .021.106 5.406 5.406 0 0 0-4.154 5.262v1.8C6.867 15.018 5 15.614 5 16.807 5 17.4 5 18 5.538 18h12.924C19 18 19 17.4 19 16.807c0-1.193-1.867-1.789-1.867-4.175ZM8.823 19a3.453 3.453 0 0 0 6.354 0H8.823Z"/>
+                                </a>
+                            </svg>
+                        </li>
+                    </div>
+                        <div class="po">
+                            <a href="/Profile/Profile.html"><li class="profile-all"><svg class="profile" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
+                                </svg></li></a>
+                                <a href="/Profile/Profile.html"><li class="pro">Profile</li></a><!-- ลิงค์ไปหน้า Profile -->
+                        </div>
+                </ul>
+            </div>
+        </header>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img class="Nok" src="/img/oo2.png" alt="">
+                    <h3 class="Nof">Notification</h3>
+                </div>
+                <hr>
+                <a href="/Chat/ChatP1/Chat.html" class="sub-menu-link">
+                    <div class="img-men">
+                        <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.ดร.ปราลี-1.jpg" alt="">
+                    </div>
+                    <p>ผู้ช่วยศาสตราจารย์ <br> ดร.ปราลี มณีรัตน์</p>
+                    <span>+3</span>
+                </a>
+                <hr>
+                <a href="/Chat/ChatP2/Chat.html" class="sub-menu-link">
+                    <div class="img-men">
+                        <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.มาสวีร์-1-667x1000.jpg" >
+                    </div>
+                    <p>ผู้ช่วยศาสตราจารย์ <br> มาสวีร์ มาศดิศรโชติ</p>
+                    <span></span>
+                </a>
+                <hr>
+                <a href="/Chat/ChatP3/Chat.html" class="sub-menu-link">
+                    <div class="img-men">
+                        <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/อ.มาลิวรรณ-1-667x1000.jpg" alt="">
+                    </div>
+                    <p>อาจารย์ <br> มาลิวรรณ บุญพลอย</p>
+                    <span>+1</span>
+                </a>
+                <hr>
+                <a href="/Chat/ChatP4/Chat.html" class="sub-menu-link">
+                    <div class="img-men">
+                        <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/09/อ.ทิพย์อรุณ-26-667x1000.jpg" alt="">
+                    </div>
+                    <p>อาจารย์ <br> ทิพย์อรุณ เขี้ยวแก้ว</p>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="/img/oo2.png" alt="">
+                <h3 class="Nof">Notification</h3>
+            </div>
+            <hr>
+            <a href="/Chat/ChatP1/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.ดร.ปราลี-1.jpg" alt="">
+                </div>
+                <p>ผู้ช่วยศาสตราจารย์ <br> ดร.ปราลี มณีรัตน์</p>
+                <span>+3</span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP2/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.มาสวีร์-1-667x1000.jpg" >
+                </div>
+                <p>ผู้ช่วยศาสตราจารย์ <br> มาสวีร์ มาศดิศรโชติ</p>
+                <span></span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP3/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/อ.มาลิวรรณ-1-667x1000.jpg" alt="">
+                </div>
+                <p>อาจารย์ <br> มาลิวรรณ บุญพลอย</p>
+                <span>+1</span>
+            </a>
+            <hr>
+            <a href="/Chat/ChatP4/Chat.html" class="sub-menu-link">
+                <div class="img-men">
+                    <img src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/09/อ.ทิพย์อรุณ-26-667x1000.jpg" alt="">
+                </div>
+                <p>อาจารย์ <br> ทิพย์อรุณ เขี้ยวแก้ว</p>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="modal">
+            <div class="bg-modal">
+                    <img src="">
+                <div class="A-head">
+                    <div class="B-head"><img class="img-B1" src="https://www.spu.ac.th/fac/informatics/wp-content/uploads/sites/10/2023/07/ผศ.มาสวีร์-1-667x1000.jpg" ></div>
+                    <p class="head-T">
+                        <p class="head-A">ผู้ช่วยศาสตราจารย์</p>
+                        <p class="head-T">มาสวีร์ มาศดิศรโชติ</p>
+                    <hr class="under-B">
+                        <p class="head-D">หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์</p>
+                        <p class="head-T1">วุฒิการศึกษา :</p>
+                        <p class="head-D1">ปริญญาโท: วิทยาศาสตรมหาบัณฑิต (เทคโนโลยีสารสนเทศ)
+                            สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง
+                            <br><br>
+                            ปริญญาตรี: วิทยาศาสตรบัณฑิต (สถิติ)
+                            มหาวิทยาลัยศิลปากร</p>
+                        <p class="head-T2">ความเชี่ยวชาญ</p>
+                        <p class="head-D2">1. Data Analytics & Visualization <br>
+                            2. Data mining <br>
+                            3. AI(Machine Learning) <br>
+                            4. Database System <br></p>
+                        <p class="head-T3">ประสบการณ์การทำงาน :</p>
+                        <p class="head-D3">คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม <br>
+                            ตำแหน่ง : หัวหน้าสาขาวิชาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ (พ.ศ.2565 - ปัจจุบัน)
+                            <br><br>
+                            คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม <br>
+                            ตำแหน่ง : หัวหน้าสาขาวิชาเทคโนโลยีสารสนเทศและการสื่อสาร (พ.ศ. 2556-2558)
+                            <br><br>
+                            คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม <br>
+                            ตำแหน่ง : อาจารย์ที่ปรึกษาภาคเสาร์-อาทิตย์ สาขาวิชาคอมพิวเตอร์ธุรกิจ (พ.ศ. 2547-2553)
+                            <br><br>
+                            ทีมวิทยากรในหลักสูตร Cloud Computing โครงการเสริมสร้างความรู้และทักษะบุคลากร <br>
+                            ด้าน Security, Business Analyst, System Analyst, Cloud computing, Internet of Thing จัดโดยสำนักงานส่งเสริมอุตสาหกรรมซอฟต์แวร์แห่งชาติ (องค์การมหาชน) พ.ศ. 2559
+                        </p>
+                            
+                        <p class="head-T4">ผลงานทางวิชาการ:</p>
+                        <p class="head-D4">งานวิจัย และวารสารระดับนานาชาติ <br>
+                            1) Banditwattanawong, T., Masdisornchote, M. and Uthayopas, P. “Multi-provider Cloud Computing Network Infrastructure Optimization”, Future Generation Computer Systems, Elsevier, vol.55, pp.116-128, 2016. <br> (Thomson ISI impact factor 2014 = 2.786) <br>
+                            2) Banditwattanawong, T., Masdisornchote, M. and Uthayopas, P. 2016. “Hybrid Cloud Computing: Economy, Scalability and Responsiveness Optimization”, Chiang Mai Journal of Science, Vol.43, No.4, pp.884-896, 2016. (Thomson ISI impact factor 2015 = 0.420) <br>
+                            • งานประชุมวิชาการระดับนานาชาติ <br>
+                            1) Masawee Masdisornchote. (2012). A Sentiment Analysis Framework in Implicit Opinions for Thai Language. Proceedings of the 41st Annual Conference of the IEEE Industrial Electronics Society, 2015, 9-12 November 2015, Yokohama, Japan, pp. 357-361. <br>
+                            2) Banditwattanawong, T. and Masdisornchote, M. “Federated Taxonomies Toward Infrastructure-as-a-Service Evaluation”, The IRES 38th International Conference in Singapore, pp. 19-24, 2016. <br>
+                            3) T. Banditwattanawong and M. Masdisornchote, “Egress Cloud Computing with Big Data Attribution”, The 2nd International Conference on Communication and Computer Engineering (ICOCOE2015), Lecture Notes in Electrical Engineering Series, vol. 362, Springer, pp. 683-692, 2016, Thailand. <br>
+                            4) Banditwattanawong, T., Masdisornchote, M. and Uthayopas, P. 2014. “The Smart Distribution of Social Media Contents”, IEEE 2014 International Electrical Engineering Congress (iEECON2014). <br>
+                            5) Banditwattanawong, T., Masdisornchote, M. and Uthayopas, P. 2014. “Economical and Efficient Big Data Sharing with i-Cloud”, KIISE IEEE International Conference on Big Data and Smart Computing (BigComp2014). (in Scopus) <br>
+                            3.1.2 บทความทางวิชาการ <br>
+                            1) มาสวีร์ มาศดิศรโชติ. (2557). การทำเหมืองความคิดเห็นภาษาไทย. วารสารศรีปทุมปริทัศน์ ฉบับวิทยาศาสตร์และเทคโนโลยี. ปีที่ 6. มกราคม-ธันวาคม 2557. กรุงเทพฯ: มหาวิทยาลัยศรีปทุม. หน้า 110-128.
+                        </p>
+                        <p class="head-T5">Certification</p>
+                        <p class="head-D5">
+                            ITPE (Information Technology Passport Examination: IP) <br>
+                            Data Cube: Practical Data Mining with RapidMiner Studio 6 <br>
+                            iTop Class: Professional Facebook Marketing <br>
+                            TPQI : Software & Applications Level 3 <br>
+                            TPQI : Project Management Level 3 <br>
+                            Microsoft Office Specialist (MOS) Certification on Microsoft Office Word 2013 <br>
+                            Microsoft Office Specialist (MOS) Certification on Microsoft Office Excel 2013 <br>
+                            Microsoft Office Specialist (MOS) Certification on Microsoft Office Powerpoint 2013 
+                        </p>
+                        <p class="head-T6">โทร.</p>
+                        <p class="head-D6">0 2579 1111 ต่อ 2214</p>
+                        <p class="head-T7">อีเมล:</p>
+                        <p class="head-D7">masawee.ma@spu.ac.th</p>
+            </div>
+        </div>
+    </main>
+    <script src="Professor.js"></script>
+</div>
+</body>
+</html>
