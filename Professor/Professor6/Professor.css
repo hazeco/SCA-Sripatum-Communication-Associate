@@ -461,6 +461,24 @@ user-info, .Nok{
         margin: 0rem 4rem 2rem 4rem;
         font-size: 1.7rem;
     }
+    .head-T5{
+        margin: 1rem 4rem -0.5rem 4rem;
+        font-size: 1.2rem;
+        opacity: 50%;
+    }
+    .head-D5{
+        margin: 0rem 4rem 2rem 4rem;
+        font-size: 1.7rem;
+    }
+    .head-T6{
+        margin: 1rem 4rem -0.5rem 4rem;
+        font-size: 1.2rem;
+        opacity: 50%;
+    }
+    .head-D6{
+        margin: 0rem 4rem 2rem 4rem;
+        font-size: 1.7rem;
+    }
 }
 
 
