@@ -559,18 +559,6 @@ main {
     #toggle:checked ~ .menu{
         max-height: 100%;
     }
-    hr {
-        z-index: 1;
-        height: 5px;
-        border-radius: 10px;
-        border: none;
-        background: rgb(255,0,143);
-        background: linear-gradient(90deg, rgba(255,0,143,1) 0%, rgba(255,45,240,1) 24%, rgba(255,0,143,1) 45%, rgba(255,45,240,1) 66%, rgba(255,0,143,1) 81%, rgba(255,45,240,1) 100%);
-        box-shadow: 
-        0 0 10px rgb(255,0,143),
-        0 0 20px rgb(255,0,143),
-        0 0 40px rgb(62, 31, 48);
-    }
     footer {
         z-index: 1;
     }
