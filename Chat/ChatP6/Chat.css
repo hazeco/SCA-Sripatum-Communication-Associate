@@ -457,12 +457,6 @@ main{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .logo1{
-                opacity: 0.5;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
         }
         
         li+p{
