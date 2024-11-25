@@ -240,6 +240,7 @@ body {
         }
         
         .pro {
+            top: 1px;
             position: relative;
             left: -1rem;
             z-index: 100;
